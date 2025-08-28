@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Template for storymap</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+   
+    <!-- Add the Mapbox GL JS CSS and JS files -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css' rel='stylesheet' />
+    
+    <!-- Add the Intersection Observer and Scrollama JS files -->
+    <script src="https://unpkg.com/intersection-observer@0.12.2/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+
+    <!-- Add the Roboto font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <!-- Add my own style.css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- The HTML body is comprised of two components: map and story -->
+    <!-- The map div holds the map itself -->
+    <div id="map"></div>
+
+    <!-- While the story div holds everything on top of the map, 
+     such as the title, the individual chapters, and the footer -->
+    <div id='story'></div>
+
+    <!-- The config.js file contains the configuration settings for the story map,
+     and the text/media content of each chapter -->
+    <script src='./js/config.js'></script>
+
+    <!-- The map.js file contains the code to generate the map and slap the story on top-->
+    <script src="./js/map.js"></script>
+
+</body>
+</html>
